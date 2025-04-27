@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hotel</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="contenedor">
+        <img src="imagenes/logohotel.png" class="logo2">
+        <nav class="menu">
+            <a href="#" class="sombra"><i class="fas fa-heart"></i> Favoritos</a>
+            <a href="#" class="sombra"><i class="fas fa-earth"></i> Idioma</a>
+            <a href="#" class="sombra"><i class="fas fa-user"></i> Iniciar sesión</a>
+            <div class="menu-desplegable">
+                <a href="#" class="sombra"><i class="fas fa-bars"></i> Menú</a>
+                <ul class="menu-vertical">
+                    <li><a href="#"><i class="fas fa-history"></i> Vistos recientemente</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Ayuda y asistencia</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <div class="texto1">
+        <h1>AHORRA UN 50% EN TU PROXIMA ESTANCIA DE HOTEL</h1>
+
+    </div>
+    <div class="texto1">
+        <h4>comparamos precios de hoteles de varios sitios</h4>
+    </div>
+
+
+    <aside class="formulario2">
+        <div class="form-register">
+            <form>
+                <label for="n_noches">Número de noches</label>
+                <input class="controls" type="text" id="n_noches">
+
+                <label id="ciudad_destino" for="ciudad_destino">Ciudad de destino</label>
+                <select class="controls" id="ciudad_destino">
+                    <option value="medellin">Medellín</option>
+                    <option value="cartagena">Cartagena</option>
+                    <option value="bogota">Bogotá</option>
+                    <option value="armenia">Armenia</option>
+                </select>
+                <input class="button" type="button" onclick="calcular_coste()" value="precio">
+                <input class="controls" type="text" id="result" readonly>
+            </form>
+        </div>
+    </aside>
+
+    <div class="sec-1">
+        <img src="imagenes/Air BnB.jpg" width="110px" ; class="img">
+        <img src="imagenes/booking.jpeg" width="110px" ; class="img">
+        <img src="imagenes/trivago.jpeg" width="110px" ; class="img">
+        <img src="imagenes/Tripadvisor.jpg" width="120px" ; class="img">
+    </div>
+
+
+
+    <section>
+        <div class="container">
+            <div class="gradient">
+                <div class="texto">
+                    <h2>QUIENES SOMOS</h2>
+                    <h4>En el Hotel imperio blanco, brindamos experiencias únicas de confort y hospitalidad. Nuestro
+                        compromiso
+                        con la excelencia garantiza un ambiente acogedor, servicios de primera clase y atención
+                        personalizada. Creamos recuerdos inolvidables con elegancia, modernidad y pasión por cada
+                        detalle. ¡Bienvenido a Estelar!
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contenedor2">
+        <div class="org">
+            <img src="imagenes/relajateconestilo.png" class="imgen">
+
+            <div class="textoicon">
+                <h3>RELAJATE CON ESTILO</h3>
+                <p>Disfruta de habitaciones cómodas, con estilo y vistas espectaculares.</p>
+            </div>
+        </div>
+
+
+        <div class="org">
+            <img src="imagenes/exploraturitmo.png" class="imgen">
+
+            <div class="textoicon">
+                <h3>EXPLORA TU RITMO</h3>
+                <p>Ubicación ideal, cerca de puntos turísticos y opciones gastronómicas.</p>
+            </div>
+        </div>
+
+        <div class="org">
+            <img src="imagenes/ofertasexclusivas.png" class="imgen">
+
+            <div class="textoicon">
+                <h3>OFERTAS EXCLUSIVAS</h3>
+                <p>Disfruta del lujo con nuestras promociones. ¡Reserva ahora!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="containerfoo">
+            <img src="imagenes/imperioblanco.png" class="imgfooter1">
+            <div class="footer1">
+
+
+                <a href="#">
+                    <p>Presentacion</p>
+                </a>
+                <a href="#">
+                    <p>Puestos vacantes</p>
+                </a>
+                <a href="#">
+                    <p>Prensa</p>
+                </a>
+                <a href="#">
+                    <p>Relaciones con inversores</p>
+                </a>
+                <a href="#">
+                    <p>Apps de imperio blanco:estés donde estes</p>
+                </a>
+                <a href="#">
+                    <p>imperio blanco Business:Studio affiliate</p>
+                </a>
+            </div>
+
+
+            <div class="footer1">
+                <a href="#">
+                    <p>Ayuda</p>
+                </a>
+                <a href="#">
+                    <p>Descubre cómo funciona imperio blanco</p>
+                </a>
+                <a href="#">
+                    <p>Terminos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Informacion legal</p>
+                </a>
+                <a href="#">
+                    <p>Aviso de privacidad</p>
+                </a>
+                <a href="#">
+                    <p>Informacion sobre DSA</p>
+                </a>
+
+            </div>
+
+
+
+        </div>
+    </footer>
+    <script src="hotel.js"></script>
+</body>
+
+</html>

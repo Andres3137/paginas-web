@@ -1,0 +1,417 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+/*organizacion del header*/
+.contenedor {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.item {
+  margin-right: 18px;
+}
+
+/*IMAGEN*/
+.logo2 {
+  width: 10%;
+  height: 12%;
+}
+div {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/*estilo y sombra del contenedor*/
+.sombra {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.sombra:hover {
+  background-color: rgba(0, 0, 0, 0.219);
+  box-shadow: 0 4px 8px rgba(45, 139, 27, 0.2);
+}
+
+/*quitar relleno al icono*/
+.sombra i {
+  color: transparent;
+  -webkit-text-stroke: 2px black; /* Aplica un borde negro al ícono */
+}
+
+/* Estilo para el menú desplegable */
+.menu-desplegable {
+  position: relative;
+}
+
+/* Estilo para ocultar el menú por defecto */
+.menu-vertical {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Posicionamos el menú debajo del enlace */
+  top: 100%; /* Aparece justo debajo del enlace */
+  left: 0;
+}
+
+/* Estilo para desplegar el menú cuando el cursor está encima del enlace */
+.menu-desplegable:hover .menu-vertical {
+  display: block;
+}
+
+/* Estilos para el enlace del menú */
+.menu-desplegable a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Estilo para el ícono dentro del menú */
+.menu-desplegable i {
+  margin-right: 8px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Estilo adicional para darle una sombra al enlace (opcional) */
+.menu-desplegable a.sombra:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los elementos de la lista */
+.menu-vertical li {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+}
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+.menu-vertical li a:hover {
+  background-color: #ddd;
+}
+/*TERMINACION DEL HEADER*/
+
+.texto1 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*INICIO SECTION*/
+
+.formulario2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
+  margin: 20px auto;
+}
+.formulario2 {
+  background-image: url("https://via.placeholder.com/850x150"); /* Imagen sutil de fondo */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.form-register {
+  width: 100%;
+}
+
+.form-register form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+select.controls {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  appearance: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23666666' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select.controls:hover {
+  border-color: #5db075;
+}
+
+.controls:focus {
+  border-color: #5db075;
+  box-shadow: 0 0 4px #5db075;
+  outline: none;
+}
+
+.button {
+  background-color: #5db075;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4c905e;
+  transform: scale(1.05);
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+#result {
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  width: 180px;
+  font-size: 15px;
+}
+#n_noches {
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 0;
+  width: 150px;
+  height: 30px;
+}
+
+input[type="button"].button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #5db075;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3 ease;
+}
+
+input[type="button"].button:hover {
+  background-color: #4a9d60;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"].button:focus {
+  outline: none;
+  box-shadow: 0 0 6px #5db075;
+}
+
+/*TERMINACION ASIDE*/
+.sec-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+/*INICIO SECTION*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.texto {
+  position: relative;
+  color: #000;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.gradient {
+  max-width: 100%;
+  padding: 30px;
+  height: 30%;
+  background: linear-gradient(to right, #f0f0f0, #d3d3d3, #d4f4dd);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+  border-radius: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+h4 {
+  font-size: 16px;
+  color: #555555;
+}
+
+/*TERMINACION SECTION*/
+
+.contenedor2 {
+  display: flex;
+  padding: 65px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.org .imgen {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.org h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/*INICIO FOOTER*/
+footer {
+  background-color: rgb(56, 51, 51);
+  position: relative;
+}
+.conteinerfoo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  width: 10%;
+}
+
+.face {
+  width: 5%;
+}
+
+.imgfooter1 {
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.footer1 a {
+  text-decoration: none;
+  color: white;
+}
+.footer1 {
+  padding: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin-right: 55px;
+}
+
+@media (max-width: 768px) {
+  .logo2 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .contenedor {
+    flex-direction: row;
+  }
+  .sombra {
+    display: block;
+  }
+  .texto1 {
+    text-align: center;
+  }
+  .form-register form {
+    flex-direction: column;
+  }
+  .img {
+    width: 90px;
+  }
+  .container {
+    width: 90%;
+  }
+  .contenedor2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .org {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    margin: 10px;
+  }
+}
