@@ -380,6 +380,61 @@ footer {
   margin-right: 55px;
 }
 
+.container_quien {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 40px; /* Espacio entre columnas */
+  padding: 40px;
+}
+
+.imagenes_quien {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de imágenes */
+  gap: 10px;
+}
+
+.imgquien {
+  width: 200px; /* Ajusta según quieras */
+  aspect-ratio: 3/3;
+  object-fit: cover;
+  border-radius: 5px; /* Opcional, para bordes redondeados */
+}
+
+.texto_quien {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#quienes_somos {
+  text-align: center;
+  margin: 20px auto;
+  align-items: center;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.show-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.show-on-load.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .logo2 {
     width: 50%;
